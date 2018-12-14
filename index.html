@@ -48,7 +48,29 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" target="_self" href="/entrar">Entrar</a>
+              <a class="nav-link active" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Entrar</a>
+
+              <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <p>Bem-vinda!</p>
+                    <img src="./img/user.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Digite seu email" name="uname" required>
+              
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Digite sua senha" name="psw" required>
+                      
+                    <button type="submit" class="text-uppercase">Entrar</button>
+                  </div>
+    
+                </form>
+              </div>
             </li>
             <li class="nav-item">
               <a class="btn btn-primary nav-link" target="_self" href="/cadastrar">Cadastrar grátis</a>
