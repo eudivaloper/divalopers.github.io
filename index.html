@@ -33,7 +33,7 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"> < Divalopers /> </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
+        
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -55,7 +55,7 @@
                 <form class="modal-content animate" action="/action_page.php">
                   <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <p>Bem-vinda!</p>
+                    <p>Bem-vinda Diva!</p>
                     <img src="./img/user.png" alt="Avatar" class="avatar">
                   </div>
               
@@ -73,7 +73,35 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary nav-link" target="_self" href="/cadastrar">Cadastrar grátis</a>
+              <a class="btn btn-primary nav-link" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Cadastrar grátis</a>
+            
+              <div id="id02" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <p>Bem-vinda Diva!</p>
+                    <img src="./img/user.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Nome completo</b></label>
+                    <input type="text" placeholder="Digite seu nome completo" name="uname" required>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Digite seu email" name="uname" required>                    
+              
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Crie uma senha com pelo menos 8 caracteres" name="psw" required>
+
+                    <label for="psw"><b>Confirmar senha</b></label>
+                    <input type="password" placeholder="Digite novamente a senha criada" name="psw" required>
+                      
+                    <button type="submit" class="text-uppercase">Cadastrar</button>
+                  </div>
+    
+                </form>
+              </div>
             </li>
           </ul>
         </div>
